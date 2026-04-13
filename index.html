@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magnetometer Demo</title>
+    <script type="module" crossorigin src="./assets/index-BNf2n266.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-qyyIFGF8.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Magnetometer Sensor Data</h1>
+      <p>This web app reads the magnetic field from your device's magnetometer.</p>
+      
+      <div id="status-card" class="card">
+        <h2 id="status">Waiting for permissions...</h2>
+        <button id="start-btn">Start Sensor</button>
+      </div>
+
+      <div class="card data-card">
+        <div class="data-row">
+          <span class="axis">X (μT)</span>
+          <span id="x-val">0.00</span>
+        </div>
+        <div class="data-row">
+          <span class="axis">Y (μT)</span>
+          <span id="y-val">0.00</span>
+        </div>
+        <div class="data-row">
+          <span class="axis">Z (μT)</span>
+          <span id="z-val">0.00</span>
+        </div>
+      </div>
+      
+      <div class="info">
+        <p><strong>Note:</strong> Magnetometer API is primarily supported on Android Chrome. You may be asked to grant permission.</p>
+        <p>If you get a "not supported" error, ensure you are accessing this directly using Android Chrome and that it is served over HTTPS.</p>
+      </div>
+    </div>
+  </body>
+</html>
